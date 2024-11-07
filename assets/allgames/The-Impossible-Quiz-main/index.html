@@ -1,26 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+    <link rel="icon" type="image/x-icon" href="/images/pizzalogo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Impossible Quiz</title>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>The Pizza Edition</title>
+    <link id="favicon" rel="icon" href="/jsload/favicon.js" type="image/x-icon">
+    <script src="/jsload/favicon.js"></script>
+    <script src="/jsload/panickey.js"></script>
+    <script src="/jsload/confirmation.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fullg.css">
 </head>
 <body>
-    <h1>The Impossible Quiz - Placeholder</h1>
-    <p>This is where the game would appear.</p>
-</body>
-</html>
+    <div class="embed-container">
+
+        <div id="overlay">
+            <img src="/images/games/theimpossiblequiz.png" alt="Play Image">
+            <div class="overlay-content">
+                <div class="game-title">The Impossible Quiz</div>
+                <div class="developer-info">BY: Creator</div>
+                <button id="play-btn">Play Now!</button>
+            </div>
+        </div>
+        <iframe id="embed-frame" src=""></iframe>
+        </div>
+    
+    <script>
+        document.getElementById('play-btn').addEventListener('click', function() {
+            const iframe = document.getElementById('embed-frame');
+            iframe.src = "/assets/allgames/The-Impossible-Quiz-main/index.html"; 
+            document.getElementById('overlay').style.display = 'none'; 
+        });
+
+
+    </script>
+
+</body></html>
