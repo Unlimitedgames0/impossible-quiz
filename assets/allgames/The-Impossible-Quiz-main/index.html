@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Game Page</title>
+    <title>The Impossible Quiz</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="playGame()">Play Now!</button>
-    
-    <iframe id="game-frame" style="display:none; width:100%; height:500px;" src=""></iframe>
-
-    <script>
-        function playGame() {
-            const iframe = document.getElementById('game-frame');
-            iframe.src = "/assets/allgames/The-Impossible-Quiz-main/index.html"; // Set your game URL here
-            iframe.style.display = 'block'; // Display the iframe
-        }
-    </script>
+    <h1>The Impossible Quiz - Placeholder</h1>
+    <p>This is where the game would appear.</p>
 </body>
 </html>
