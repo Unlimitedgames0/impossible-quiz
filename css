@@ -1,0 +1,18 @@
+your-repo-name/
+├── index.html
+├── images/
+│   ├── pizzalogo.png
+│   └── games/
+│       └── theimpossiblequiz.png
+├── assets/
+│   └── allgames/
+│       └── The-Impossible-Quiz-main/
+│           └── index.html
+├── css/
+│   ├── style.css
+│   └── fullg.css
+├── jsload/
+│   ├── favicon.js
+│   ├── panickey.js
+│   └── confirmation.js
+└── README.md
