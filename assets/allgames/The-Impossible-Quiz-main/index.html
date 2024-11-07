@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Page</title>
+</head>
+<body>
+    <button onclick="playGame()">Play Now!</button>
+    
+    <iframe id="game-frame" style="display:none; width:100%; height:500px;" src=""></iframe>
+
+    <script>
+        function playGame() {
+            const iframe = document.getElementById('game-frame');
+            iframe.src = "/assets/allgames/The-Impossible-Quiz-main/index.html"; // Set your game URL here
+            iframe.style.display = 'block'; // Display the iframe
+        }
+    </script>
+</body>
+</html>
